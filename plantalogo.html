@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plantalogo - Catálogo de Plantas e Ferramenta de Busca">
+    <title>Plantalogo</title>
+    <link rel="stylesheet" href="plantalogo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Plantalogo</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#catalogo">Plantalogo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="busca">
+            <h2>Busca de Plantas</h2>
+            <input type="text" id="searchInput" placeholder="Digite o nome da planta...">
+        </section>
+        <section id="catalogo">
+            <h2>Catálogo de Plantas</h2>
+            <div class="plantas-container">
+                <div class="planta">
+                    <h3>Aloe Vera</h3>
+                    <p><strong>Nome Popular:</strong> Babosa</p>
+                    <p><strong>História:</strong> Usada desde a antiguidade para cuidados com a pele.</p>
+                    <p><strong>Bom para:</strong> Hidratação, cuidados com queimaduras.</p>
+                    <p><strong>Não é bom para:</strong> Consumo interno sem supervisão médica.</p>
+                    <p><strong>Como Cuidar:</strong> Requer luz indireta e pouca água.</p>
+                </div>
+                <div class="planta">
+                    <h3>Espada de São Jorge</h3>
+                    <p><strong>Nome Popular:</strong> Língua de Sogra</p>
+                    <p><strong>História:</strong> Planta de fácil cuidado, muito usada em escritórios e casas.</p>
+                    <p><strong>Bom para:</strong> Purificação do ar.</p>
+                    <p><strong>Não é bom para:</strong> Animais de estimação, pois pode ser tóxica.</p>
+                    <p><strong>Como Cuidar:</strong> Requer pouca água e suporta luz direta e indireta.</p>
+                </div>
+                <div class="planta" data-nome="Samambaia">
+                <h3>Samambaia</h3>
+                <p><strong>Nome Popular:</strong> Samambaia</p>
+                <p><strong>História:</strong> Planta ornamental muito popular em interiores.</p>
+                <p><strong>Bom para:</strong> Purificação do ar.</p>
+                <p><strong>Não é bom para:</strong> Ambientes com pouca umidade.</p>
+                <p><strong>Como Cuidar:</strong> Requer umidade constante e luz indireta.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Orquídea">
+                <h3>Orquídea</h3>
+                <p><strong>Nome Popular:</strong> Orquídea</p>
+                <p><strong>História:</strong> Conhecida por suas flores exóticas e variadas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Ambientes muito secos.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas regulares.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Cacto">
+                <h3>Cacto</h3>
+                <p><strong>Nome Popular:</strong> Cacto</p>
+                <p><strong>História:</strong> Planta suculenta adaptada a ambientes áridos.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores e exteriores.</p>
+                <p><strong>Não é bom para:</strong> Regas excessivas.</p>
+                <p><strong>Como Cuidar:</strong> Requer muita luz e pouca água.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Suculenta">
+                <h3>Suculenta</h3>
+                <p><strong>Nome Popular:</strong> Suculenta</p>
+                <p><strong>História:</strong> Planta adaptada a armazenar água em suas folhas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Ambientes muito úmidos.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz direta e pouca água.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Lavanda">
+                <h3>Lavanda</h3>
+                <p><strong>Nome Popular:</strong> Lavanda</p>
+                <p><strong>História:</strong> Usada historicamente por suas propriedades calmantes.</p>
+                <p><strong>Bom para:</strong> Aromaterapia e decoração.</p>
+                <p><strong>Não é bom para:</strong> Ambientes muito úmidos.</p>
+                <p><strong>Como Cuidar:</strong> Requer sol pleno e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Bromélia">
+                <h3>Bromélia</h3>
+                <p><strong>Nome Popular:</strong> Bromélia</p>
+                <p><strong>História:</strong> Planta tropical conhecida por suas folhas coloridas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Antúrio">
+                <h3>Antúrio</h3>
+                <p><strong>Nome Popular:</strong> Lírio Flamingo</p>
+                <p><strong>História:</strong> Planta ornamental com flores vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Ficus">
+                <h3>Ficus</h3>
+                <p><strong>Nome Popular:</strong> Figueira</p>
+                <p><strong>História:</strong> Planta popular em interiores e jardins.</p>
+                <p><strong>Bom para:</strong> Purificação do ar.</p>
+                <p><strong>Não é bom para:</strong> Ambientes com mudanças bruscas de temperatura.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas regulares.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Jiboia">
+                <h3>Jiboia</h3>
+                <p><strong>Nome Popular:</strong> Jiboia</p>
+                <p><strong>História:</strong> Planta trepadeira muito popular em interiores.</p>
+                <p><strong>Bom para:</strong> Purificação do ar.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Zamioculca">
+                <h3>Zamioculca</h3>
+                <p><strong>Nome Popular:</strong> Zamioculca</p>
+                <p><strong>História:</strong> Planta resistente e de baixa manutenção.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e pouca água.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Filodendro">
+                <h3>Filodendro</h3>
+                <p><strong>Nome Popular:</strong> Filodendro</p>
+                <p><strong>História:</strong> Planta ornamental com folhas grandes e vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Maranta">
+                <h3>Maranta</h3>
+                <p><strong>Nome Popular:</strong> Maranta</p>
+                <p><strong>História:</strong> Conhecida por suas folhas ornamentais.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Hera">
+                <h3>Hera</h3>
+                <p><strong>Nome Popular:</strong> Hera</p>
+                <p><strong>História:</strong> Planta trepadeira popular em jardins.</p>
+                <p><strong>Bom para:</strong> Cobertura de muros e paredes.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Peperômia">
+                <h3>Peperômia</h3>
+                <p><strong>Nome Popular:</strong> Peperômia</p>
+                <p><strong>História:</strong> Planta ornamental de fácil cuidado.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e pouca água.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Palmeira Chamaedorea">
+                <h3>Palmeira Chamaedorea</h3>
+                <p><strong>Nome Popular:</strong> Palmeira de Salão</p>
+                <p><strong>História:</strong> Planta popular em interiores.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas regulares.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Pilea">
+                <h3>Pilea</h3>
+                <p><strong>Nome Popular:</strong> Planta Chinesa do Dinheiro</p>
+                <p><strong>História:</strong> Planta ornamental com folhas arredondadas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Begônia">
+                <h3>Begônia</h3>
+                <p><strong>Nome Popular:</strong> Begônia</p>
+                <p><strong>História:</strong> Planta ornamental com flores vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores e jardins.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Calathea">
+                <h3>Calathea</h3>
+                <p><strong>Nome Popular:</strong> Maranta-Pavão</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por suas folhas decorativas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Camedórea-elegante">
+                <h3>Camedórea-elegante</h3>
+                <p><strong>Nome Popular:</strong> Palmeira de Salão</p>
+                <p><strong>História:</strong> Planta ornamental popular em interiores.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Costela de Adão">
+                <h3>Costela de Adão</h3>
+                <p><strong>Nome Popular:</strong> Costela de Adão</p>
+                <p><strong>História:</strong> Planta ornamental com folhas grandes e recortadas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Gerânio">
+                <h3>Gerânio</h3>
+                <p><strong>Nome Popular:</strong> Gerânio</p>
+                <p><strong>História:</strong> Planta ornamental com flores vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Lírio da Paz">
+                <h3>Lírio da Paz</h3>
+                <p><strong>Nome Popular:</strong> Lírio da Paz</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por suas flores brancas.</p>
+                <p><strong>Bom para:</strong> Purificação do ar.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Rosa do Deserto">
+                <h3>Rosa do Deserto</h3>
+                <p><strong>Nome Popular:</strong> Rosa do Deserto</p>
+                <p><strong>História:</strong> Planta ornamental com flores vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz direta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Jade">
+                <h3>Jade</h3>
+                <p><strong>Nome Popular:</strong> Planta Jade</p>
+                <p><strong>História:</strong> Planta suculenta conhecida por suas folhas verdes brilhantes.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Ambientes muito úmidos.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Azaleia">
+                <h3>Azaleia</h3>
+                <p><strong>Nome Popular:</strong> Azaleia</p>
+                <p><strong>História:</strong> Planta ornamental com flores coloridas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Bougainvillea">
+                <h3>Bougainvillea</h3>
+                <p><strong>Nome Popular:</strong> Primavera</p>
+                <p><strong>História:</strong> Planta trepadeira com flores vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e fachadas.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz direta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Camélia">
+                <h3>Camélia</h3>
+                <p><strong>Nome Popular:</strong> Camélia</p>
+                <p><strong>História:</strong> Planta ornamental com flores vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Copo de Leite">
+                <h3>Copo de Leite</h3>
+                <p><strong>Nome Popular:</strong> Copo de Leite</p>
+                <p><strong>História:</strong> Planta ornamental com flores brancas vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores e jardins.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Cravo">
+                <h3>Cravo</h3>
+                <p><strong>Nome Popular:</strong> Cravo</p>
+                <p><strong>História:</strong> Planta ornamental com flores coloridas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas moderadas.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Dália">
+                <h3>Dália</h3>
+                <p><strong>Nome Popular:</strong> Dália</p>
+                <p><strong>História:</strong> Planta ornamental com flores coloridas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Gardênia">
+                <h3>Gardênia</h3>
+                <p><strong>Nome Popular:</strong> Gardênia</p>
+                <p><strong>História:</strong> Planta ornamental com flores brancas perfumadas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Girassol">
+                <h3>Girassol</h3>
+                <p><strong>Nome Popular:</strong> Girassol</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por seguir o sol.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins.</p>
+                <p><strong>Não é bom para:</strong> Ambientes com pouca luz.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz direta e regas regulares.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Hortênsia">
+                <h3>Hortênsia</h3>
+                <p><strong>Nome Popular:</strong> Hortênsia</p>
+                <p><strong>História:</strong> Planta ornamental com flores grandes e coloridas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Lírio">
+                <h3>Lírio</h3>
+                <p><strong>Nome Popular:</strong> Lírio</p>
+                <p><strong>História:</strong> Planta ornamental com flores vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores e jardins.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Tulipa">
+                <h3>Tulipa</h3>
+                <p><strong>Nome Popular:</strong> Tulipa</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por suas flores coloridas e vibrantes.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores e jardins.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido, mas bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Amor-Perfeito">
+                <h3>Amor-Perfeito</h3>
+                <p><strong>Nome Popular:</strong> Amor-Perfeito</p>
+                <p><strong>História:</strong> Planta ornamental com flores coloridas e delicadas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de calor.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e regas regulares.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Petúnia">
+                <h3>Petúnia</h3>
+                <p><strong>Nome Popular:</strong> Petúnia</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por suas flores coloridas e abundantes.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins.</p>
+                <p><strong>Não é bom para:</strong> Ambientes com pouca luz.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz direta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Margarida">
+                <h3>Margarida</h3>
+                <p><strong>Nome Popular:</strong> Margarida</p>
+                <p><strong>História:</strong> Planta ornamental com flores brancas e miolo amarelo.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de água.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz direta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Violeta">
+                <h3>Violeta</h3>
+                <p><strong>Nome Popular:</strong> Violeta</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por suas flores pequenas e delicadas.</p>
+                <p><strong>Bom para:</strong> Decoração de interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Hibisco">
+                <h3>Hibisco</h3>
+                <p><strong>Nome Popular:</strong> Hibisco</p>
+                <p><strong>História:</strong> Planta ornamental com flores grandes e vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Ambientes com pouca luz.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz direta e regas regulares.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Dente-de-Leão">
+                <h3>Dente-de-Leão</h3>
+                <p><strong>Nome Popular:</strong> Dente-de-Leão</p>
+                <p><strong>História:</strong> Planta ornamental e medicinal conhecida por suas flores amarelas e sementes voadoras.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e medicina natural.</p>
+                <p><strong>Não é bom para:</strong> Ambientes muito secos.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz direta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Malva">
+                <h3>Malva</h3>
+                <p><strong>Nome Popular:</strong> Malva</p>
+                <p><strong>História:</strong> Planta ornamental e medicinal conhecida por suas flores coloridas e propriedades curativas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e medicina natural.</p>
+                <p><strong>Não é bom para:</strong> Excesso de calor.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Gérbera">
+                <h3>Gérbera</h3>
+                <p><strong>Nome Popular:</strong> Gérbera</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por suas flores grandes e coloridas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Ambientes muito secos.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Açucena">
+                <h3>Açucena</h3>
+                <p><strong>Nome Popular:</strong> Açucena</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por suas flores grandes e perfumadas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Exposição direta ao sol forte.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Papoula">
+                <h3>Papoula</h3>
+                <p><strong>Nome Popular:</strong> Papoula</p>
+                <p><strong>História:</strong> Planta ornamental e medicinal conhecida por suas flores grandes e coloridas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e medicina natural.</p>
+                <p><strong>Não é bom para:</strong> Ambientes muito secos.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Sim</p>
+            </div>
+
+            <div class="planta" data-nome="Ranúnculo">
+                <h3>Ranúnculo</h3>
+                <p><strong>Nome Popular:</strong> Ranúnculo</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por suas flores coloridas e vistosas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e interiores.</p>
+                <p><strong>Não é bom para:</strong> Excesso de calor.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Salvia">
+                <h3>Salvia</h3>
+                <p><strong>Nome Popular:</strong> Salvia</p>
+                <p><strong>História:</strong> Planta ornamental e medicinal conhecida por suas flores coloridas e propriedades curativas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e medicina natural.</p>
+                <p><strong>Não é bom para:</strong> Ambientes muito secos.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Verbena">
+                <h3>Verbena</h3>
+                <p><strong>Nome Popular:</strong> Verbena</p>
+                <p><strong>História:</strong> Planta ornamental e medicinal conhecida por suas flores pequenas e delicadas.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins e medicina natural.</p>
+                <p><strong>Não é bom para:</strong> Excesso de calor.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz indireta e solo úmido.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+
+            <div class="planta" data-nome="Zínia">
+                <h3>Zínia</h3>
+                <p><strong>Nome Popular:</strong> Zínia</p>
+                <p><strong>História:</strong> Planta ornamental conhecida por suas flores coloridas e vibrantes.</p>
+                <p><strong>Bom para:</strong> Decoração de jardins.</p>
+                <p><strong>Não é bom para:</strong> Ambientes com pouca luz.</p>
+                <p><strong>Como Cuidar:</strong> Requer luz direta e solo bem drenado.</p>
+                <p><strong>Venenosa para animais:</strong> Não</p>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plantalogo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
